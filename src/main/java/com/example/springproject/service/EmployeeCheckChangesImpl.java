@@ -16,8 +16,6 @@ public class EmployeeCheckChangesImpl implements Runnable {
     @Override
     public void run() {
         try {
-//            String abc = employee.getAddress().getAddress();
-//            log.info("Thread 1 : before changes " + abc);
             Thread.sleep(10000);
             employee.setAddress(Address.builder().address1("lets").address2("see").build());
             log.info("Thread1, Address : {}", employee.toString());

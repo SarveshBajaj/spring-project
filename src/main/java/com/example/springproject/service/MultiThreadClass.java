@@ -1,9 +1,11 @@
 package com.example.springproject.service;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
+@Slf4j
 public class MultiThreadClass {
 
     @Autowired
@@ -20,5 +22,6 @@ public class MultiThreadClass {
         Thread thread1 = new Thread(employeeNewChangesCheck);
         thread1.start();
 
+        log.info("Test completed!");
     }
 }

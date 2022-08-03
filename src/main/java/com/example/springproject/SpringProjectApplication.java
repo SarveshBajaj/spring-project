@@ -23,9 +23,9 @@ public class SpringProjectApplication implements CommandLineRunner {
 
 		String[] beans = appContext.getBeanDefinitionNames();
 		Arrays.sort(beans);
-		for (String bean : beans) {
-			System.out.println(bean);
-		}
+//		for (String bean : beans) {
+//			System.out.println(bean);
+//		}
 
 	}
 
