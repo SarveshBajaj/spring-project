@@ -23,5 +23,8 @@ public class MultiThreadClass {
         thread1.start();
 
         log.info("Test completed!");
+
+        // Results - The main thread got completed and response was sent from the API.
+        // The other 2 threads continue running.
     }
 }

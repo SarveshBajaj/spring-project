@@ -1,7 +1,5 @@
 package com.example.springproject.controller;
 
-import com.example.springproject.service.EmployeeCheckChangesImpl;
-import com.example.springproject.service.EmployeeNewChangesCheck;
 import com.example.springproject.service.MultiThreadClass;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,7 +12,8 @@ public class DemoController {
     MultiThreadClass multiThreadClass;
 
     @GetMapping("/testMultiThread")
-    public void checkSingletonExample() {
+    public String checkSingletonExample() {
         multiThreadClass.executeMultiThreading();
+        return "Test Done bro!";
     }
 }
